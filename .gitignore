@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+
+# Local research archives and QA screenshots are not deployment source.
+source-pages/
+original.html
+doctors-original.html
+preview.png
+button-contrast-fixed.png
+
+# Unused reference photography.
+assets/hero.jpg
+assets/original-panel.jpg
