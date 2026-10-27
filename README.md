@@ -20,6 +20,8 @@ npm run build
 
 `dist/` is the static hosting output, including HTML for all imported routes. A host must serve `.aspx` as HTML for the legacy accessibility route, or rewrite it to index.html. `_redirects` supports Netlify-style hosts. The local preview is bound to loopback only.
 
+Vercel is configured in `vercel.json` to use the Other framework preset, run `npm run build`, and serve `dist/` as static files. The legacy accessibility route is rewritten to the HTML app, and old ASPX links redirect to their current pages. Keep this configuration: automatic Node detection otherwise mistakes the browser-side `app.js` for a server entrypoint and creates a failing function.
+
 ## Included
 
 - Local research archive: `source-pages/` (128 discovered original routes), `original.html`, and `doctors-original.html`. These raw snapshots are excluded from Git; all imported page content and required assets are included in the repository.

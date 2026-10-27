@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "redirects": [
+    { "source": "/Procedures.aspx", "destination": "/procedures/", "permanent": true },
+    { "source": "/Contact.aspx", "destination": "/contact/", "permanent": true },
+    { "source": "/AppointmentRequest.aspx", "destination": "/appointment-request/", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/ada.aspx", "destination": "/index.html" }
+  ]
+}
